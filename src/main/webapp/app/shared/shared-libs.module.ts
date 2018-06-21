@@ -6,6 +6,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgJhipsterModule } from 'ng-jhipster';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { CookieModule } from 'ngx-cookie';
+import { ColorPickerModule } from 'ngx-color-picker';
 
 @NgModule({
     imports: [
@@ -17,7 +18,8 @@ import { CookieModule } from 'ngx-cookie';
             defaultI18nLang: 'pl'
         }),
         InfiniteScrollModule,
-        CookieModule.forRoot()
+        CookieModule.forRoot(),
+        ColorPickerModule
     ],
     exports: [
         FormsModule,
@@ -25,7 +27,8 @@ import { CookieModule } from 'ngx-cookie';
         CommonModule,
         NgbModule,
         NgJhipsterModule,
-        InfiniteScrollModule
+        InfiniteScrollModule,
+        ColorPickerModule
     ]
 })
 export class PortfolioSharedLibsModule {}
