@@ -23,4 +23,73 @@ only screen and (                min-resolution: 2dppx) {
         background-size: contain;
     }
 }
+/* Create a Parallax Effect */
+.bgimg-1, .avatar, .java, .angular, .db {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('../../content/images/background.jpg');
+    min-height: 400px;
+    height: 400px;
+}
+.avatar {
+    background-image: url('../../content/images/avatar.jpg');
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.java {
+    background-image: url('../../content/images/JAVA.jpg');
+    width: 75px;
+    height: 100px;
+}
+.db {
+    background-image: url('../../content/images/db.jpg');
+    width: 75px;
+    height: 75px;
+}
+.angular {
+    background-image: url('../../content/images/angular.jpg');
+    width: 75px;
+    height: 75px;
+}
+
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1 {
+        background-attachment: scroll;
+    }
+}
+.display-middle {
+    position: absolute;
+    top: 230px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.center {
+    text-align: center!important;
+}
+.w3-xlarge {
+    font-size: 24px!important;
+}
+.w3-animate-opacity {
+    animation: opac 0.8s;
+}
+.w3-padding-large {
+    padding: 12px 24px!important;
+}
+.w3-black, .w3-hover-black:hover {
+    color: #fff!important;
+    background-color: #000!important;
+}
+.w3-wide {
+    letter-spacing: 10px;
+}

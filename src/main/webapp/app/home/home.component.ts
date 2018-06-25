@@ -45,4 +45,8 @@ export class HomeComponent implements OnInit {
     login() {
         this.modalRef = this.loginModalService.open();
     }
+    scroll(el) {
+        console.log(el);
+        el.scrollIntoView({behavior:"smooth"});
+    }
 }

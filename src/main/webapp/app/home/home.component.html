@@ -1,4 +1,47 @@
-<div class="row">
+<div class="bgimg-1 w3-display-container w3-opacity-min" #first>
+    <div class="display-middle" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity" jhiTranslate="learnMore" (click)="scroll(second)">Learn more</span>
+    </div>
+</div>
+<div #second>
+    <div class="row justify-content-center my-3">
+        <div class="col-3"><div class="avatar m-5"></div></div>
+        <div class="col-9">
+            <h3>Web Developer</h3>
+            <h5 class="text-muted">Technologie, w których się specjalizuję:</h5>
+            <div class="row justify-content-center my-3">
+                <div class="col-3 mx-3 card">
+                    <p class="card-img-top text-center java m-3" style="align-self: center"></p>
+                    <hr>
+                    <div class="card-body">
+                        <h5 class="card-title">JAVA</h5>
+                        <p class="card-text text-muted">Język na bazie którego tworzę logikę aplikacji przy wparciu Spring Boota, Hibernate oraz JPA.</p>
+                    </div>
+                </div>
+                <div class="col-3 mx-3 card">
+                    <p class="card-img-top text-center angular m-3" style="align-self: center"></p>
+                    <hr>
+                    <div class="card-body">
+                        <h5 class="card-title">Angular w wersji 4/5</h5>
+                        <p class="card-text text-muted">Framework, którego używam do tworzenia SPA w rozszerzeniu o PrimeNG czy Angular Materials.</p>
+                    </div>
+                </div>
+                <div class="col-3 mx-3 card">
+                    <p class="card-img-top text-center db m-3" style="align-self: center"></p>
+                    <hr>
+                    <div class="card-body">
+                        <h5 class="card-title">Bazy danych</h5>
+                        <p class="card-text text-muted">Głównie pracuję z PostgreSQL, bądź MySQL.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+
+<!-- <div class="row">
     <div class="col-md-3">
         <span class="hipster img-fluid rounded"></span>
     </div>
@@ -8,6 +51,7 @@
 
         <div [ngSwitch]="isAuthenticated()">
             <div class="alert alert-success" *ngSwitchCase="true">
+
                 <span *ngIf="account" jhiTranslate="home.logged.message"
                     translateValues="{username: '{{account.login}}'}"> You are logged in as user "{{account.login}}". </span>
             </div>
@@ -20,9 +64,9 @@
                 <span jhiTranslate="global.messages.info.register.noaccount">You don't have an account yet?</span>
                 <a class="alert-link" routerLink="register" jhiTranslate="global.messages.info.register.link">Register a new account</a>
             </div>
-        </div>
+        </div> -->
 
-        <p jhiTranslate="home.question">
+        <!-- <p jhiTranslate="home.question">
             If you have any question on JHipster:
         </p>
 
@@ -36,6 +80,6 @@
 
         <p>
             <span jhiTranslate="home.like">If you like JHipster, don't forget to give us a star on</span> <a href="https://github.com/jhipster/generator-jhipster" target="_blank" rel="noopener" jhiTranslate="home.github">GitHub</a>!
-        </p>
-    </div>
-</div>
+        </p> -->
+    <!-- </div> -->
+<!-- </div> -->
