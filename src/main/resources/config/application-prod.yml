@@ -27,9 +27,9 @@ spring:
             enabled: false
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:postgresql://localhost:5432/portfolio
-        username: portfolio
-        password:
+        url: jdbc:postgresql://localhost:5432/d5o1778tmgg35v
+        username: kzvdiadcmvymil
+        password: a6eccbc4aa7e3d287d0ebd03184a844b28bd36335b75e9befa07651569e4004b
     jpa:
         database-platform: io.github.jhipster.domain.util.FixedPostgreSQL82Dialect
         database: POSTGRESQL
