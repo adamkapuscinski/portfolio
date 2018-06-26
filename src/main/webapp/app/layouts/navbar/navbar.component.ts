@@ -24,7 +24,7 @@ export class NavbarComponent implements OnInit, AfterViewInit {
     version: string;
     @ViewChild('navbar') element: ElementRef;
     selectedDevice: any;
-    private color: string = "lightgray";
+    color = 'lightgray';
 
     constructor(
         private loginService: LoginService,
